@@ -6,7 +6,7 @@ with open("requirements.txt") as f:
 
 setup(
     name="alshidata",               # Package name
-    version="0.1.0",                   # Initial version
+    version="0.1.1",                   # Initial version
     packages=find_packages(),          # Automatically find packages in your directory
     install_requires=requirements,      # List dependencies here (if any)
     author="Samuel Cavazos",
