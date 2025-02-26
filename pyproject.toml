@@ -1,24 +1,35 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "alshidata"
-version = "0.1.1"
-description = "A bunch of data tools by Alshival's Data Service"
+dynamic = ["version"]
+description = ''
 readme = "README.md"
-requires-python = ">=3.6"
-license = { text = "CC0 1.0 Universal" }
+requires-python = ">=3.8"
+license = "Public Domain"
+keywords = []
 authors = [
-    { name = "Samuel Cavazos", email = "samuel@alshival.com" }
-]
-urls = { Homepage = "https://github.com/Alshivals-Data-Service/alshidata" }
-dependencies = [
-    # List your dependencies here, for example:
-    "google_cloud_logging>=3.11.4"
+  { name = "Samuel Cavazos", email = "samuel@alshival.com" },
 ]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: Public Domain",
-    "Operating System :: OS Independent"
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
 ]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/Alshivals-Data-Service/alshidata"
+Issues = "https://github.com/Alshivals-Data-Service/alshidataissues"
+Source = "https://github.com/Alshivals-Data-Service/alshidata"
+
+[tool.hatch.version]
+path = "src/pyospackage/__about__.py"
