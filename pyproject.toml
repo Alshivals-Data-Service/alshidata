@@ -1,14 +1,14 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.8.0"]
 build-backend = "hatchling.build"
 
 [project]
 name = "alshidata"
-version="0.1.2"
-description = ''
+version = "0.1.2"  # Hatch can also dynamically update this if you configure it further
+description = "A bunch of data tools by Alshival's Data Service"
 readme = "README.md"
 requires-python = ">=3.8"
-license = "Public Domain"
+license = { text = "Public Domain" }
 keywords = []
 authors = [
   { name = "Samuel Cavazos", email = "samuel@alshival.com" },
@@ -24,12 +24,15 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  # List your runtime dependencies here, for example:
+  # "numpy>=1.21.0",
+]
 
 [project.urls]
 Documentation = "https://github.com/Alshivals-Data-Service/alshidata"
-Issues = "https://github.com/Alshivals-Data-Service/alshidataissues"
+Issues = "https://github.com/Alshivals-Data-Service/alshidata/issues"
 Source = "https://github.com/Alshivals-Data-Service/alshidata"
 
 [tool.hatch.version]
-path = "src/pyospackage/__about__.py"
+path = "src/alshidata/__init__.py"
