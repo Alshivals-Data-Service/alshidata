@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alshidata"
+version = "0.1.0"
+description = "A bunch of data tools by Alshival's Data Service"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "CC0 1.0 Universal" }
+authors = [
+    { name = "Samuel Cavazos", email = "samuel@alshival.com" }
+]
+urls = { Homepage = "https://github.com/Alshivals-Data-Service/alshidata" }
+dependencies = [
+    # List your dependencies here, for example:
+    "google_cloud_logging>=3.11.4"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Public Domain",
+    "Operating System :: OS Independent"
+]
